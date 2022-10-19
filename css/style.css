@@ -1,0 +1,91 @@
+body{
+    background-image:url(Images/background.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.navigation{
+    width:100vw;
+    font-size:30px;
+    padding:10px;
+    text-align:center;
+}
+#error{
+    visibility:hidden;
+    padding:10px;
+    color:red;
+}
+.inputs{
+    width:100vw;
+    margin:auto;
+}
+#name, #date, textarea{
+    width:90%;
+    text-align:center;
+    border:1px solid grey;
+    border-radius:5px;
+}
+table{
+    margin:auto;
+    width:90%;
+}
+.check{
+    width:2%;
+    padding:10px;
+    text-align:center;
+}
+.title{
+    width:20%;
+    padding:10px;
+    text-align:center;
+}
+.date{
+    width:20%;
+    padding:10px;
+    text-align:center;
+}
+.description{
+    width:50%;
+    padding:10px;
+    text-align:center;   
+}
+.delete{
+    width:2%;
+    padding:10px;
+    text-align:center;
+}
+thead tr{
+    border-bottom:2px solid black;
+}
+.table-wrapper{
+    max-height:50vh;
+    overflow-y:auto;
+}
+tr:nth-child(odd){
+    background-color:white;
+}
+tr:nth-child(even){
+    background-color:rgb(255, 230, 154);
+}
+@media only screen and (max-width:768px){
+    body{
+        background-size:100vw 100vh;
+    }
+    .check{
+        max-width:2%;
+    }
+    .title{
+        max-width:25%;
+    }
+    .date{
+        max-width:25%;
+    }
+    .description{
+        max-width:45%;
+    }
+    .delete{
+        max-width:2%;
+    }
+}
+    
+
+

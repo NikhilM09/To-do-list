@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO LIST</title>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.css">
+    <script src="Bootstrap/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/51c96d909a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <p class="navigation h1">TO DO LIST &copy;</p>
+    <div class="row inputs">
+        <div class="col-md-4 text-center pt-2">
+            <input type="text" id="name" placeholder="Enter Task Name">
+        </div>
+        <div class="col-md-4 text-center pt-2">
+            <textarea id="description" placeholder="Enter short description" rows="3" cols="30"></textarea>
+        </div>
+        <div class="col-md-4 text-center pt-2">
+            <input type="date" id="date">
+        </div>
+    </div>
+    <div class="text-center pt-3 pb-3">
+        <button type="button" class="btn btn-warning" onclick="updateTask()">Add task to list</button>
+        <p id="error">(Please fill out required fields)</p>
+    </div>
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr class="text-center">
+                    <th class="check"></th>
+                    <th class="title">Task title</th>
+                    <th class="date">Due date</th>
+                    <th class="description">Task description</th>
+                    <th class="delete"></th>
+                </tr>
+            </thead>
+            <tbody id="tasklist"></tbody>
+        </table>
+    </div>    
+    <script src="js/to_do.js"></script>
+</body>
+</html>
